@@ -105,6 +105,7 @@ return {
       ["gd"] = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Goto Definition" },
       ["gD"] = { "<cmd>lua vim.lsp.buf.declaration()<cr>", "Goto declaration" },
       ["gr"] = { "<cmd>lua vim.lsp.buf.references()<cr>", "Goto references" },
+      ["gw"] = { "<cmd>lua vim.lsp.buf.workspace_symbol()<cr>", "Workspace Symbol" },
       ["gI"] = { "<cmd>lua vim.lsp.buf.implementation()<cr>", "Goto Implementation" },
       ["gs"] = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "show signature help" },
       ["gl"] = {
@@ -114,6 +115,16 @@ return {
           vim.diagnostic.open_float(0, config)
         end,
         "Show line diagnostics",
+      },
+      ["<M-e>"] = {
+        function ()
+          vim.diagnostic.goto_next() 
+        end,
+      },
+      ["<M-d>"] = {
+        function ()
+          vim.diagnostic.goto_prev() 
+        end,
       },
     },
     insert_mode = {},

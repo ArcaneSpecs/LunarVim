@@ -34,6 +34,24 @@ local core_plugins = {
     lazy = not vim.startswith(lvim.colorscheme, "tokyonight"),
   },
   {
+    "lunarvim/darkplus.nvim"
+  },
+  {
+    "sainnhe/gruvbox-material"
+  },
+  {
+    "vimcolorschemes/vimcolorschemes"
+  },
+  {
+    "joshdick/onedark.vim"
+  },
+  {
+    "EdenEast/nightfox.nvim"
+  },
+  {
+    "Mofiqul/dracula.nvim"
+  },
+  {
     "lunarvim/lunar.nvim",
     lazy = lvim.colorscheme ~= "lunar",
   },
@@ -197,7 +215,9 @@ local core_plugins = {
     event = "User FileOpened",
     enabled = lvim.builtin.comment.active,
   },
-
+  {
+    "github/copilot.vim",
+  }, 
   -- project.nvim
   {
     "ahmedkhalf/project.nvim",

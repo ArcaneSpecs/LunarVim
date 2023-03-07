@@ -104,9 +104,10 @@ M.config = function()
       ["q"] = { "<cmd>confirm q<CR>", "Quit" },
       ["/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment toggle current line" },
       ["c"] = { "<cmd>BufferKill<CR>", "Close Buffer" },
+      ["F"] = { "<cmd>Telescope live_grep theme=ivy<CR>", "Live Grep" },
       ["f"] = {
         function()
-          require("lvim.core.telescope.custom-finders").find_project_files { previewer = false }
+          require("lvim.core.telescope.custom-finders").find_project_files { previewer = true }
         end,
         "Find File",
       },

@@ -56,6 +56,10 @@ local opts = {
         globals = { "vim", "lvim", "reload" },
       },
       workspace = default_workspace,
+      library = {
+        [vim.fn.expand("$VIMRUNTIME/lua")] = true,
+        [vim.fn.stdpath("config") .. "/lua"] = true,
+      },
     },
   },
 }

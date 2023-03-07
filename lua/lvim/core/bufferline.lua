@@ -83,10 +83,10 @@ M.config = function()
           return vim.fn.fnamemodify(buf.name, ":t:r")
         end
       end,
-      max_name_length = 18,
-      max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
+      max_name_length = 30,
+      max_prefix_length = 30, -- prefix used when a buffer is de-duplicated
       truncate_names = true, -- whether or not tab names should be truncated
-      tab_size = 18,
+      tab_size = 21,
       diagnostics = "nvim_lsp",
       diagnostics_update_in_insert = false,
       diagnostics_indicator = diagnostics_indicator,
@@ -126,7 +126,7 @@ M.config = function()
       color_icons = true, -- whether or not to add the filetype icon highlights
       show_buffer_icons = lvim.use_icons, -- disable filetype icons for buffers
       show_buffer_close_icons = lvim.use_icons,
-      show_close_icon = false,
+      show_close_icon = true,
       show_tab_indicators = true,
       persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
       -- can also be a table containing 2 custom separators

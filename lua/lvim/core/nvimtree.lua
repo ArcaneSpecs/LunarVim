@@ -26,7 +26,7 @@ function M.config()
         centralize_selection = false,
         width = 30,
         hide_root_folder = false,
-        side = "left",
+        side = "right",
         preserve_window_proportions = false,
         number = false,
         relativenumber = false,
